@@ -71,3 +71,30 @@ white-space: pre-wrap;
 word-break: break-all;
 word-wrap: break-word;
 }
+
+.tachyonRegular {
+    font-family: tachyon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tachyonHair {
+    font-family: tachyon, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.tachyonThin {
+    font-family: tachyon, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.tachyonLight {
+    font-family: tachyon, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
