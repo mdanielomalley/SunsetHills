@@ -61,7 +61,92 @@
 </nav>
 <main class="flex-shrink-0">
     <div class="container">
-
+        <h1 class="display-3 text-center tachyonRegular mt-4">Solve Sunset Hills</h1>
+                <p class="lead text-center tachyonLight">Enter Building Heights Below</p>
+        <!-- <img src="" class=" center embed-responsive mt-2" style=width:50%> -->
+              
+        <div class="input-group mt-3">
+            <input id="b1" type="number" class="form-control" placeholder="Building One
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+            <input id="b2" type="number" class="form-control" placeholder="Building Two
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+            <input id="b3" type="number" class="form-control" placeholder="Building Three
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+            <input id="b4" type="number" class="form-control" placeholder="Building Four
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+            <input id="b5" type="number" class="form-control" placeholder="Building Five
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+            <input id="b6" type="number" class="form-control" placeholder="Building Six
+                Number of Floors" min="1" max="200" oninput="validity.valid ||
+            (value='');"/>
+                <div class="input-group-append tachyonThin" id="button-addon4">
+                   <button id="clear" class ="btn btn-danger" onclick="Demolish()">Clear Data</button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center superCenter m-4">
+                <button type="submit" class="btn btn-success tachyonThin"
+                style="width:50%" id="myButton" onclick="Sunset(
+                    parseInt(document.getElementById('b1').value),
+                    parseInt(document.getElementById('b2').value),
+                    parseInt(document.getElementById('b3').value),
+                    parseInt(document.getElementById('b4').value),
+                    parseInt(document.getElementById('b5').value),
+                    parseInt(document.getElementById('b6').value))">Set the Sun</button>
+            </div>
+        </div>
+      
+        <div class="row d-flex justify-content-center superCenter">
+            <label><span></span>
+             <p></p>
+             </label><br>
+         </div>
+         <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+               <table class="table">
+                   <thead class="thead-dark">
+                     <tr>
+                       <th class="tachyonLight" scope="col">Building Number</th>
+                       <th class="tachyonLight" scope="col">Sunset View Status</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                     <tr>
+                       <th scope="row">1</th>
+                       <td id="o1"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row">2</th>
+                       <td id="o2"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row">3</th>
+                       <td id="o3"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row">4</th>
+                       <td id="o4"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row">5</th>
+                       <td id="o5"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row">6</th>
+                       <td id="o6"></td>
+                     </tr>
+                   </tbody>
+                 </table>
+           </div>
+           <div class="col-3">
+           </div>
+         </div>
     </div>
 </main>
 <footer class="footer mt-auto py-3 sticky-footer">
